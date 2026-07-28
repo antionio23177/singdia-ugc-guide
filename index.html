@@ -34,11 +34,17 @@ p{margin:8px 0}
 .hero video{width:100%;max-height:440px;object-fit:cover;border-radius:16px;display:block;background:#000}
 .big{font-family:Georgia,serif;font-size:20px;line-height:1.5;border-left:5px solid var(--gold);
  background:var(--gold-soft);border-radius:0 14px 14px 0;padding:16px 18px;margin:0 0 16px}
-.offer{display:flex;gap:12px;flex-wrap:wrap}
-.offer div{flex:1 1 170px;background:var(--pink);border:1px solid var(--pink-line);border-radius:14px;padding:11px 14px}
-.offer b{display:block;font-family:Georgia,serif;font-size:21px;color:var(--gold);line-height:1.2}
-.offer span{font-size:14px}
-.free{margin-top:12px;font-weight:700;color:var(--do)}
+.perks{display:grid;gap:10px;margin-top:6px}
+.perk-main{display:flex;align-items:center;gap:15px;background:var(--grad);color:#fff;
+ border-radius:16px;padding:15px 17px;box-shadow:0 6px 18px rgba(201,86,154,.22)}
+.perk-main .pnum{font-family:Georgia,serif;font-size:46px;font-weight:700;line-height:.95;letter-spacing:-1px;flex:0 0 auto}
+.perk-main b{display:block;font-size:18.5px;line-height:1.25}
+.perk-main small{display:block;font-size:13.5px;line-height:1.45;margin-top:3px;opacity:.93}
+.perk-row{display:flex;align-items:center;gap:12px;background:var(--card);
+ border:1px solid var(--pink-line);border-radius:14px;padding:12px 14px}
+.perk-row .pic{font-size:22px;flex:0 0 auto}
+.perk-row b{display:block;font-size:15.5px;line-height:1.3}
+.perk-row small{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.4}
 
 .spec{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .spec span{background:var(--card);border:1px solid var(--pink-line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600}
@@ -95,11 +101,22 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--pink-line);co
   <div>
     <p class="big" data-en="It's the kind of gift that makes someone tear up and remember the moment for the rest of their life. You don't need a special occasion — it's simply a beautiful way to say “I love you,” “thank you,” or to surprise someone you care about. ❤️" data-hi="Ye wo gift hai jisse kisi ki aankhein bhar aati hain aur wo pal use zindagi bhar yaad rehta hai. Koi khaas mauka chahiye hi nahi — ye bas ek khoobsurat tareeka hai “I love you”, “thank you” kehne ka, ya kisi apne ko surprise dene ka. ❤️">It's the kind of gift that makes someone tear up and remember the moment for the rest of their life. You don't need a special occasion — it's simply a beautiful way to say “I love you,” “thank you,” or to surprise someone you care about. ❤️</p>
     <h3 data-en="And what you get for it" data-hi="Aur iske liye aapko kya milega">And what you get for it</h3>
-    <div class="offer">
-      <div><b>20</b><span data-en="<b>full songs</b>, free on your account" data-hi="<b>full gaane</b>, free aapke account par">full songs, free on your account</span></div>
-      <div><b data-en="Paid" data-hi="Paid">Paid</b><span data-en="for every accepted video — your rate is agreed personally" data-hi="har accepted video ke liye — aapka rate personally tay hota hai">for every accepted video — your rate is agreed personally</span></div>
+    <div class="perks">
+      <div class="perk-main">
+        <span class="pnum">20</span>
+        <div>
+          <b data-en="full songs — free" data-hi="full gaane — free">full songs — free</b>
+          <small data-en="Complete tracks, not 30-second demos. Yours to keep forever." data-hi="Poore tracks, 30-second demo nahi. Hamesha ke liye aapke.">Complete tracks, not 30-second demos. Yours to keep forever.</small>
+        </div>
+      </div>
+      <div class="perk-row">
+        <span class="pic">💰</span>
+        <div>
+          <b data-en="Paid for every accepted video" data-hi="Har accepted video ka payment">Paid for every accepted video</b>
+          <small data-en="Your rate is agreed personally with you." data-hi="Aapka rate aapse personally tay hota hai.">Your rate is agreed personally with you.</small>
+        </div>
+      </div>
     </div>
-    <p class="free" data-en="✓ Full songs, not 30-second demos — and you never pay a rupee for them." data-hi="✓ Poore gaane, 30-second demo nahi — aur inke liye aap ek rupaya bhi nahi dete.">✓ Full songs, not 30-second demos — and you never pay a rupee for them.</p>
     <p style="margin-top:6px" data-en="Post it only if you like — we'd simply love to feature the UGC on our socials." data-hi="Post karna optional hai — hum bas ye UGC apne socials par feature karna chahenge.">Post it only if you like — we'd simply love to feature the UGC on our socials.</p>
   </div>
   <video src="media/hero.mp4" poster="img/hero.jpg" muted autoplay loop playsinline controls preload="metadata"></video>
