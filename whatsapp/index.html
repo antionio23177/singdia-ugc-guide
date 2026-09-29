@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SingDia — WhatsApp Creator Guide</title>
+<meta name="description" content="Create your SingDia song on WhatsApp and film your surprise. Recording, submission and payment instructions for UGC creators and influencers.">
+<style>
+:root{
+  --cream:#FBF6EF; --card:#FFFFFF; --pink:#FBEAEC; --pink-line:#F1D7DB;
+  --gold:#D9A441; --gold-soft:#F7EAD0; --ink:#2B2118; --muted:#8A7B6B;
+  --grad:linear-gradient(90deg,#E8944A,#C9569A);
+  --do:#1E8A5A; --do-bg:#E9F6EF; --dont:#C0384F; --dont-bg:#FCEBEE;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);line-height:1.6;
+ font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+ background-image:repeating-linear-gradient(135deg,rgba(217,164,65,.05) 0 2px,transparent 2px 22px);}
+.wrap{max-width:940px;margin:0 auto;padding:20px 20px 70px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0 2px;flex-wrap:wrap}
+header img{height:34px}
+.langs{display:flex;background:var(--card);border:1px solid var(--pink-line);border-radius:999px;padding:3px;gap:2px}
+.langs button{border:0;background:transparent;color:var(--muted);font-weight:700;font-size:13px;
+ padding:6px 16px;border-radius:999px;cursor:pointer;letter-spacing:.4px}
+.langs button.on{background:var(--grad);color:#fff}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:33px;line-height:1.18;margin:16px 0 6px}
+h2{font-family:Georgia,serif;font-style:italic;font-size:23px;margin:36px 0 6px}
+h2:before{content:"";display:block;width:44px;height:3px;background:var(--gold);border-radius:2px;margin-bottom:10px}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:8px 0}
+.lead{color:var(--muted);font-size:16.5px;margin-bottom:14px}
+
+.hero{display:grid;grid-template-columns:1fr 290px;gap:26px;align-items:center;
+ background:var(--card);border:1px solid var(--pink-line);border-radius:22px;padding:22px 24px;margin-top:6px}
+.hero video{width:100%;max-height:440px;object-fit:cover;border-radius:16px;display:block;background:#000}
+.big{font-family:Georgia,serif;font-size:20px;line-height:1.5;border-left:5px solid var(--gold);
+ background:var(--gold-soft);border-radius:0 14px 14px 0;padding:16px 18px;margin:0 0 16px}
+.perks{display:grid;gap:10px;margin-top:6px}
+.perk-main{display:flex;align-items:center;gap:15px;background:var(--grad);color:#fff;
+ border-radius:16px;padding:15px 17px;box-shadow:0 6px 18px rgba(201,86,154,.22)}
+.perk-main .pnum{font-family:Georgia,serif;font-size:46px;font-weight:700;line-height:.95;letter-spacing:-1px;flex:0 0 auto}
+.perk-main b{display:block;font-size:18.5px;line-height:1.25}
+.perk-main small{display:block;font-size:13.5px;line-height:1.45;margin-top:3px;opacity:.93}
+.perk-row{display:flex;align-items:center;gap:12px;background:var(--card);
+ border:1px solid var(--pink-line);border-radius:14px;padding:12px 14px}
+.perk-row .pic{font-size:22px;flex:0 0 auto}
+.perk-row b{display:block;font-size:15.5px;line-height:1.3}
+.perk-row small{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+
+.spec{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.spec span{background:var(--card);border:1px solid var(--pink-line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600}
+.spec b{color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--pink-line);border-radius:18px;padding:16px 18px;margin:12px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.do,.dont{border-radius:16px;padding:14px 16px}
+.do{background:var(--do-bg);border:1px solid #cbe8da}.dont{background:var(--dont-bg);border:1px solid #f4ccd3}
+.do h4{color:var(--do);margin:0 0 6px}.dont h4{color:var(--dont);margin:0 0 6px}
+ul{margin:6px 0;padding-left:20px}li{margin:5px 0}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:12px 14px 12px 56px;background:var(--card);
+ border:1px solid var(--pink-line);border-radius:14px;margin:10px 0}
+ol.steps li:before{content:counter(s);position:absolute;left:14px;top:12px;width:28px;height:28px;border-radius:50%;
+ background:var(--grad);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.field{background:var(--card);border:1px solid var(--pink-line);border-left:4px solid var(--gold);border-radius:12px;padding:13px 15px;margin:10px 0}
+.field .q{font-weight:700;font-size:16px}
+.hint{color:var(--muted);margin:4px 0 8px;font-size:14.5px}
+.ex{background:var(--pink);border-radius:10px;padding:10px 12px;margin:7px 0;font-size:14.5px;color:#5a4a3c}
+.ex i{color:var(--gold);font-style:normal;font-weight:800;margin-right:7px}
+.tip{background:var(--gold-soft);border-left:5px solid var(--gold);border-radius:10px;padding:12px 14px;margin:14px 0}
+.slot{background:#FFF6D8;border:1px dashed var(--gold);border-radius:8px;padding:2px 9px;font-weight:700;color:#8a6a12;font-size:14px}
+
+/* video grid for references + how-to */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:12px}
+.vcard{background:var(--card);border:1px solid var(--pink-line);border-radius:16px;padding:10px;text-align:center}
+.vcard video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;display:block;background:#000}
+.vcard .cap{font-weight:700;font-size:14.5px;margin-top:9px}
+.howto video{width:100%;max-width:300px;aspect-ratio:9/16;object-fit:cover;border-radius:14px;display:block;background:#000;margin-top:6px}
+.igbox{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--pink-line);
+ border-radius:14px;padding:12px 16px;margin-top:14px;text-decoration:none;color:var(--ink);font-weight:700}
+.igbox img{width:52px;height:52px;object-fit:cover;border-radius:10px}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--pink-line);color:var(--muted);font-size:14px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero video{max-height:none;max-width:340px;margin:0 auto}
+ .cols{grid-template-columns:1fr}h1{font-size:26px}.big{font-size:18px}}
+@media print{body{background:#fff}.langs{display:none}.card,.field,.do,.dont,ol.steps li,.hero,.vcard{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="../img/logo.svg" alt="SingDia">
+  <div class="langs">
+    <button id="bEN" class="on" onclick="setLang('en')">EN</button>
+    <button id="bHI" onclick="setLang('hi')">HI</button>
+  </div>
+</header>
+
+<h1  data-en="Create songs on WhatsApp. Film reactions. Get paid." data-hi="WhatsApp par gaane banao. Reaction filmao. Paise kamao.">Create songs on WhatsApp. Film reactions. Get paid.</h1>
+<p class="lead" data-en="Make a personalized song for someone you love, surprise them, and film the real moment. We handle the editing." data-hi="Apne kisi apne ke liye personalized gaana banao, unhe surprise do, aur asli moment film karo. Editing hum sambhal lenge.">Make a personalized song for someone you love, surprise them, and film the real moment. We handle the editing.</p>
+
+<div class="hero">
+  <div>
+    <p class="big" data-en="It's the kind of gift that makes someone tear up and remember the moment for the rest of their life. You don't need a special occasion — it's simply a beautiful way to say “I love you,” “thank you,” or to surprise someone you care about. ❤️" data-hi="Ye wo gift hai jisse kisi ki aankhein bhar aati hain aur wo pal use zindagi bhar yaad rehta hai. Koi khaas mauka chahiye hi nahi — ye bas ek khoobsurat tareeka hai “I love you”, “thank you” kehne ka, ya kisi apne ko surprise dene ka. ❤️">It's the kind of gift that makes someone tear up and remember the moment for the rest of their life. You don't need a special occasion — it's simply a beautiful way to say “I love you,” “thank you,” or to surprise someone you care about. ❤️</p>
+    <h3 data-en="And what you get for it" data-hi="Aur iske liye aapko kya milega">And what you get for it</h3>
+    <div class="perks">
+      <div class="perk-main">
+        <span class="pnum">20</span>
+        <div>
+          <b data-en="full songs — free" data-hi="full gaane — free">full songs — free</b>
+          <small  data-en="Create full songs with your private creator access." data-hi="Apne private creator access se poore gaane banao.">Create full songs with your private creator access.</small>
+        </div>
+      </div>
+      <div class="perk-row">
+        <span class="pic">💰</span>
+        <div>
+          <b data-en="Paid for every accepted video" data-hi="Har accepted video ka payment">Paid for every accepted video</b>
+          <small data-en="Your rate is agreed personally with you." data-hi="Aapka rate aapse personally tay hota hai.">Your rate is agreed personally with you.</small>
+        </div>
+      </div>
+    </div>
+    <p  style="margin-top:6px" data-en="<b>UGC creators:</b> send raw footage; we edit. <b>Influencers:</b> send raw footage first, then publish the final video as agreed." data-hi="<b>UGC creators:</b> raw footage bhejo; editing hum karenge. <b>Influencers:</b> pehle raw footage bhejo, phir agreement ke mutabik final video post karo."><b>UGC creators:</b> send raw footage; we edit. <b>Influencers:</b> send raw footage first, then publish the final video as agreed.</p>
+  </div>
+  <video src="../media/hero.mp4" poster="../img/hero.jpg" muted autoplay loop playsinline controls preload="metadata"></video>
+</div>
+
+<div class="spec">
+  <span data-en="📱 Vertical <b>9:16</b>" data-hi="📱 Vertical <b>9:16</b>">📱 Vertical <b>9:16</b></span>
+  <span  data-en="🎞️ <b>Full HD · 1080 × 1920</b> or higher" data-hi="🎞️ <b>Full HD · 1080 × 1920</b> ya usse zyada">🎞️ <b>Full HD · 1080 × 1920</b> or higher</span>
+  <span data-en="⏱️ Raw <b>from 3 minutes</b>" data-hi="⏱️ Raw <b>3 minute se zyada</b>">⏱️ Raw <b>from 3 minutes</b></span>
+  <span data-en="✂️ <b>Send raw — we edit</b>" data-hi="✂️ <b>Raw bhejo — edit hum karenge</b>">✂️ <b>Send raw — we edit</b></span>
+  <span data-en="⏳ Send it within <b>4–5 days</b>" data-hi="⏳ <b>4–5 din</b> ke andar bhejo">⏳ Send it within <b>4–5 days</b></span>
+</div>
+
+<h2  data-en="1 · Get your private creator access" data-hi="1 · Apna private creator access lo">1 · Get your private creator access</h2>
+<p  data-en="Your SingDia contact will send your creator link <b>privately</b>. Use it to open the WhatsApp chat and send the pre-filled message. Keep this access link private." data-hi="Aapka SingDia contact aapko creator link <b>private message</b> mein bhejega. Usse WhatsApp chat kholo aur pehle se likha message send karo. Is access link ko private rakho.">Your SingDia contact will send your creator link <b>privately</b>. Use it to open the WhatsApp chat and send the pre-filled message. Keep this access link private.</p>
+<p  data-en="Check that your creator credits are available before making the song. If you see a payment request or your credits are missing, contact us before paying." data-hi="Gaana banane se pehle check karo ki creator credits mil gaye hain. Agar payment maange ya credits na dikhein, pay karne se pehle humse baat karo.">Check that your creator credits are available before making the song. If you see a payment request or your credits are missing, contact us before paying.</p>
+<h2  data-en="2 · Create your song on WhatsApp" data-hi="2 · WhatsApp par apna gaana banao">2 · Create your song on WhatsApp</h2>
+<ol class="steps">
+<li  data-en="Send a <b>text message or voice note</b>: who the song is for, their name, your relationship, the occasion, memories and what you want to say. Mention your preferred song language." data-hi="<b>Text message ya voice note</b> bhejo: gaana kiske liye hai, unka naam, aapka rishta, mauka, yaadein aur aap kya kehna chahte ho. Gaane ki language bhi batao.">Send a <b>text message or voice note</b>: who the song is for, their name, your relationship, the occasion, memories and what you want to say. Mention your preferred song language.</li>
+<li  data-en="Answer any follow-up questions. Read the lyrics carefully and check names, personal details and pronunciation." data-hi="Aage ke sawaalon ka jawab do. Lyrics dhyan se padho aur naam, personal details aur pronunciation check karo.">Answer any follow-up questions. Read the lyrics carefully and check names, personal details and pronunciation.</li>
+<li  data-en="Use <b>Edit lyrics</b> to request changes and <b>Other sound</b> to adjust the sound before creating." data-hi="Badlaav ke liye <b>Edit lyrics</b> aur sound badalne ke liye <b>Other sound</b> use karo.">Use <b>Edit lyrics</b> to request changes and <b>Other sound</b> to adjust the sound before creating.</li>
+<li  data-en="Tap <b>Create song</b>. Listen to both versions and choose the one you want to use for the surprise." data-hi="<b>Create song</b> par tap karo. Dono versions suno aur surprise ke liye apna pasandida version chuno.">Tap <b>Create song</b>. Listen to both versions and choose the one you want to use for the surprise.</li>
+</ol>
+<div class="tip" data-en="<b>Record the whole creation process too.</b> Screen-record your WhatsApp journey, from your message or voice note to the lyrics and finished song. Send this as separate raw footage. We will decide what to include during editing. Hide unrelated chats, notifications and phone numbers." data-hi="<b>Gaana banane ka poora process bhi record karo.</b> Apne message ya voice note se lekar lyrics aur final gaane tak WhatsApp ki screen recording karo. Ise alag raw footage ke roop mein bhejo. Editing mein hum decide karenge kya rakhna hai. Doosri chats, notifications aur phone numbers chhupa do."><b>Record the whole creation process too.</b> Screen-record your WhatsApp journey, from your message or voice note to the lyrics and finished song. Send this as separate raw footage. We will decide what to include during editing. Hide unrelated chats, notifications and phone numbers.</div>
+<div class="card" data-en="<b>WhatsApp walkthrough video — coming soon.</b> Follow the steps above for now." data-hi="<b>WhatsApp tutorial video jald aayega.</b> Tab tak upar diye steps follow karo."><b>WhatsApp walkthrough video — coming soon.</b> Follow the steps above for now.</div>
+<h2  data-en="3 · Your story — the most important part" data-hi="3 · Aapki kahaani — sabse zaroori hissa">3 · Your story — the most important part</h2>
+<p  data-en="Tell the bot real, specific details in your message or voice note. Use the examples below as inspiration: names, habits, memories, inside jokes and the message you want the song to carry." data-hi="Apne message ya voice note mein bot ko asli aur khaas details batao. Neeche ke examples se ideas lo: naam, aadatein, yaadein, inside jokes aur gaane se aap kya kehna chahte ho.">Tell the bot real, specific details in your message or voice note. Use the examples below as inspiration: names, habits, memories, inside jokes and the message you want the song to carry.</p>
+<div class="field">
+  <div class="q" data-en="A · Their name" data-hi="A · Unka naam">A · Their name</div>
+  <p  class="hint" data-en="Use the name you call them. Check it in the lyrics and listen for its pronunciation before filming." data-hi="Wahi naam do jisse aap unhe bulate ho. Filming se pehle lyrics mein naam check karo aur gaane mein uska pronunciation suno.">Use the name you call them. Check it in the lyrics and listen for its pronunciation before filming.</p>
+  <div class="ex"><i>e.g.</i><span data-en="Priya · Maa · Rajesh bhai" data-hi="Priya · Maa · Rajesh bhai">Priya · Maa · Rajesh bhai</span></div>
+</div>
+
+<div class="field">
+  <div class="q" data-en="B · What they do" data-hi="B · Wo kya karte hain">B · What they do</div>
+  <div class="ex"><i>1</i><span data-en="She's a nurse at Apollo, works night shifts, and still wakes me up with chai in the morning." data-hi="Wo Apollo mein nurse hai, night shift karti hai, aur phir bhi subah mujhe chai se uthati hai.">She's a nurse at Apollo, works night shifts, and still wakes me up with chai in the morning.</span></div>
+  <div class="ex"><i>2</i><span data-en="Papa drove an auto for 20 years so I could finish school. He never took a single day off." data-hi="Papa ne 20 saal auto chalaya taaki main school poora kar sakun. Unhone ek din bhi chhutti nahi li.">Papa drove an auto for 20 years so I could finish school. He never took a single day off.</span></div>
+</div>
+
+<div class="field">
+  <div class="q" data-en="C · How they look or feel" data-hi="C · Wo kaise dikhte ya lagte hain">C · How they look or feel</div>
+  <div class="ex"><i>1</i><span data-en="Always calm, never raises her voice, and somehow she's always right." data-hi="Hamesha shaant, kabhi awaaz nahi uthati, aur pata nahi kaise hamesha sahi hoti hai.">Always calm, never raises her voice, and somehow she's always right.</span></div>
+  <div class="ex"><i>2</i><span data-en="Big moustache, strict face, and the softest heart in the whole house." data-hi="Badi moonch, sakht chehra, aur poore ghar ka sabse naram dil.">Big moustache, strict face, and the softest heart in the whole house.</span></div>
+</div>
+
+<div class="field">
+  <div class="q" data-en="D · Memories or inside jokes 👌 (the magic one)" data-hi="D · Yaadein ya inside jokes 👌 (sabse magic wala)">D · Memories or inside jokes 👌 (the magic one)</div>
+  <p  class="hint" data-en="These details make the song personal. Share actual moments — a place, a date, a habit or a joke — and check how they appear in the lyrics." data-hi="Ye details gaane ko personal banati hain. Asli lamhe batao — jagah, tareekh, aadat ya mazaak — aur lyrics mein check karo ki wo kaise aaye hain.">These details make the song personal. Share actual moments — a place, a date, a habit or a joke — and check how they appear in the lyrics.</p>
+  <div class="ex"><i>1</i><span data-en="The night our car broke down near Lonavala and we ate vada pav in the rain — she still calls it our best date." data-hi="Wo raat jab Lonavala ke paas humari car kharab ho gayi aur humne baarish mein vada pav khaya — wo aaj bhi use humara best date kehti hai.">The night our car broke down near Lonavala and we ate vada pav in the rain — she still calls it our best date.</span></div>
+  <div class="ex"><i>2</i><span data-en="Every Sunday she steals the last piece of biryani off my plate and swears she didn't touch it." data-hi="Har Sunday wo meri plate se biryani ka aakhri piece chura leti hai aur kasam khaati hai ki haath bhi nahi lagaya.">Every Sunday she steals the last piece of biryani off my plate and swears she didn't touch it.</span></div>
+  <div class="ex"><i>3</i><span data-en="She's called me “Motu” since our first year in college and still can't say it without laughing." data-hi="College ke pehle saal se wo mujhe “Motu” bulati hai aur aaj bhi bina hanse nahi keh paati.">She's called me “Motu” since our first year in college and still can't say it without laughing.</span></div>
+</div>
+
+<div class="field">
+  <div class="q" data-en="E · What this song should say" data-hi="E · Ye gaana kya kehna chahiye">E · What this song should say</div>
+  <p class="hint" data-en="The message you never say out loud. Write it like you're saying it to their face." data-hi="Wo baat jo aap kabhi zubaan se nahi kehte. Aise likho jaise unke saamne keh rahe ho.">The message you never say out loud. Write it like you're saying it to their face.</p>
+  <div class="ex"><i>1</i><span data-en="Tell her that after four years I still get nervous before I call her — and that I'd choose this life with her all over again." data-hi="Use batao ki chaar saal baad bhi call karne se pehle main nervous ho jata hoon — aur ye zindagi main phir se usi ke saath chunta.">Tell her that after four years I still get nervous before I call her — and that I'd choose this life with her all over again.</span></div>
+  <div class="ex"><i>2</i><span data-en="Tell Maa that every rupee she saved for my school made me who I am, and that I finally want to say thank you out loud." data-hi="Maa ko batao ki unka bachaya har rupaya mujhe wo banaya jo main aaj hoon, aur ab main zor se thank you kehna chahta hoon.">Tell Maa that every rupee she saved for my school made me who I am, and that I finally want to say thank you out loud.</span></div>
+</div>
+
+<div class="field">
+  <div class="q" data-en="Free notes" data-hi="Free notes">Free notes</div>
+  <p class="hint" data-en="Anything else — dates, names, places, little facts. Nothing here is too small." data-hi="Aur kuch bhi — tareekhein, naam, jagah, chhoti baatein. Yahan kuch bhi chhota nahi hai.">Anything else — dates, names, places, little facts. Nothing here is too small.</p>
+  <div class="ex"><i>e.g.</i><span data-en="We got married on 12 March 2021 in Jaipur. Her mother's name is Sunita. We have a dog called Simba who only listens to her. She says she hates surprises — this is my first real one in four years." data-hi="Humari shaadi 12 March 2021 ko Jaipur mein hui. Uski maa ka naam Sunita hai. Humara ek dog hai Simba, jo sirf uski sunta hai. Wo kehti hai use surprises pasand nahi — chaar saal mein ye mera pehla asli surprise hai.">We got married on 12 March 2021 in Jaipur. Her mother's name is Sunita. We have a dog called Simba who only listens to her. She says she hates surprises — this is my first real one in four years.</span></div>
+</div>
+
+<h2 data-en="4 · What to film" data-hi="4 · Kya film karna hai">4 · What to film</h2>
+<div class="card">
+  <p data-en="<b>Raw video: from 3 minutes.</b> Keep the camera rolling through all three parts:" data-hi="<b>Raw video: 3 minute se zyada.</b> Teeno hisson mein camera chalta rehna chahiye:"><b>Raw video: from 3 minutes.</b> Keep the camera rolling through all three parts:</p>
+  <ul>
+    <li data-en="<b>Before</b> — the setup, the nerves, a live chat with them" data-hi="<b>Pehle</b> — taiyari, ghabrahat, unke saath live baat"><b>Before</b> — the setup, the nerves, a live chat with them</li>
+    <li data-en="<b>The full song</b> — play it from start to end, don't cut it short" data-hi="<b>Poora gaana</b> — shuru se aakhir tak bajao, beech mein mat kaato"><b>The full song</b> — play it from start to end, don't cut it short</li>
+    <li data-en="<b>After</b> — a short talk once it ends: what they felt, what they say" data-hi="<b>Baad mein</b> — khatam hone par thodi baat: unhe kaisa laga, wo kya kehte hain"><b>After</b> — a short talk once it ends: what they felt, what they say</li>
+  </ul>
+  <p data-en="The peak we need: <b>the moment they hear their own name</b> and react — tears, laugh, hug, a quiet “thank you”." data-hi="Humein jo peak chahiye: <b>wo pal jab wo apna naam sunte hain</b> aur react karte hain — aansu, hansi, gale lagna, dheere se “thank you”.">The peak we need: <b>the moment they hear their own name</b> and react — tears, laugh, hug, a quiet “thank you”.</p>
+</div>
+
+<h2 data-en="5 · Filming &amp; sound" data-hi="5 · Filming aur sound">5 · Filming &amp; sound</h2>
+<div class="cols">
+  <div class="do"><h4>✅ DO</h4><ul>
+    <li data-en="Place the phone, then sit <b>beside</b> them in the frame" data-hi="Phone rakho, phir unke <b>bagal mein</b> frame ke andar baitho">Place the phone, then sit <b>beside</b> them in the frame</li>
+    <li  data-en="Play the <b>full song from start to finish on an external speaker</b>." data-hi="<b>Poora gaana shuru se aakhir tak external speaker par</b> bajao.">Play the <b>full song from start to finish on an external speaker</b>.</li>
+    <li data-en="Let it happen naturally — don't coach them" data-hi="Sab natural hone do — unhe sikhao mat">Let it happen naturally — don't coach them</li>
+    <li data-en="Keep faces clear and well lit" data-hi="Chehre saaf aur acchi roshni mein rakho">Keep faces clear and well lit</li>
+  </ul></div>
+  <div class="dont"><h4>❌ DON'T</h4><ul>
+    <li  data-en="Don't use the <b>phone speaker, earphones or headphones</b> for the surprise." data-hi="Surprise ke liye <b>phone speaker, earphones ya headphones</b> use mat karo.">Don't use the <b>phone speaker, earphones or headphones</b> for the surprise.</li>
+    <li data-en="Don't film in a noisy place" data-hi="Shor waali jagah pe film mat karo">Don't film in a noisy place</li>
+    <li data-en="Don't point the camera straight at their face the whole time" data-hi="Poore time camera seedha unke chehre pe mat rakho">Don't point the camera straight at their face the whole time</li>
+    <li data-en="Don't shoot horizontal" data-hi="Horizontal shoot mat karo">Don't shoot horizontal</li>
+  </ul></div>
+</div>
+
+<h2  data-en="6 · Footage checklist" data-hi="6 · Footage checklist">6 · Footage checklist</h2>
+<div class="cols">
+  <div class="do"><h4  data-en="✅ Ready for review" data-hi="✅ Review ke liye taiyaar">✅ Ready for review</h4><ul>
+    <li  data-en="Vertical <b>9:16, Full HD 1080 × 1920 or higher</b>, clear and well lit" data-hi="Vertical <b>9:16, Full HD 1080 × 1920 ya usse zyada</b>, saaf aur acchi light">Vertical <b>9:16, Full HD 1080 × 1920 or higher</b>, clear and well lit</li>
+    <li data-en="Raw, 3+ minutes, unedited" data-hi="Raw, 3+ minute, bina edit">Raw, 3+ minutes, unedited</li>
+    <li data-en="Real, visible emotion" data-hi="Asli, dikhne wala emotion">Real, visible emotion</li>
+    <li data-en="Song clearly audible from a speaker" data-hi="Gaana speaker se saaf sunai de">Song clearly audible from a speaker</li>
+  </ul></div>
+  <div class="dont"><h4 data-en="❌ Rejected" data-hi="❌ Reject">❌ Rejected</h4><ul>
+    <li data-en="Horizontal, blurry or dark" data-hi="Horizontal, blurry ya andhera">Horizontal, blurry or dark</li>
+    <li data-en="Song not audible / noisy background" data-hi="Gaana sunai na de / background shor">Song not audible / noisy background</li>
+    <li data-en="Staged, lifeless reaction" data-hi="Nakli, bejaan reaction">Staged, lifeless reaction</li>
+    <li data-en="Shorter than 3 minutes or already edited" data-hi="3 minute se chhota ya pehle se edited">Shorter than 3 minutes or already edited</li>
+  </ul></div>
+</div>
+
+<h2 data-en="7 · References — study these" data-hi="7 · References — inhe dekho">7 · References — study these</h2>
+<div class="vgrid">
+  <div class="vcard"><video src="../media/ref-wife.mp4" poster="../img/ref-wife.jpg" controls playsinline preload="none"></video><div class="cap" data-en="Good UGC for Wife" data-hi="Good UGC for Wife">Good UGC for Wife</div></div>
+  <div class="vcard"><video src="../media/ref-friend.mp4" poster="../img/ref-friend.jpg" controls playsinline preload="none"></video><div class="cap" data-en="Good UGC for Friend" data-hi="Good UGC for Friend">Good UGC for Friend</div></div>
+  <div class="vcard"><video src="../media/ref-boyfriend.mp4" poster="../img/ref-boyfriend.jpg" controls playsinline preload="none"></video><div class="cap" data-en="Good UGC for Boyfriend" data-hi="Good UGC for Boyfriend">Good UGC for Boyfriend</div></div>
+  <div class="vcard"><video src="../media/ref-mom.mp4" poster="../img/ref-mom.jpg" controls playsinline preload="none"></video><div class="cap" data-en="Good UGC for Mom" data-hi="Good UGC for Mom">Good UGC for Mom</div></div>
+</div>
+<a class="igbox" href="https://www.instagram.com/singdia.love/" target="_blank" rel="noopener">
+  <img src="../img/warm.jpg" alt="">
+  <span data-en="Our Instagram — for inspiration · @singdia.love" data-hi="Hamara Instagram — inspiration ke liye · @singdia.love">Our Instagram — for inspiration · @singdia.love</span>
+</a>
+
+<h2 data-en="8 · What to send us" data-hi="8 · Humein kya bhejna hai">8 · What to send us</h2>
+<div class="card">
+  <p data-en="Upload everything to <b>your own Google Drive</b> folder and send us the link (make sure it's open for viewing). Please send the following:" data-hi="Sab kuch <b>apne Google Drive</b> folder mein upload karo aur humein link bhejo (viewing ke liye open ho). Ye cheezein bhejni hain:">Upload everything to <b>your own Google Drive</b> folder and send us the link (make sure it's open for viewing). Please send the following:</p>
+  <ul>
+    <li data-en="🎬 <b>The raw video</b> — original quality, no editing, no added music" data-hi="🎬 <b>Raw video</b> — original quality, koi editing nahi, koi music nahi">🎬 <b>The raw video</b> — original quality, no editing, no added music</li>
+    <li data-en="📝 <b>The song lyrics</b> — the text of the song you created" data-hi="📝 <b>Gaane ke lyrics</b> — jo gaana banaya uska text">📝 <b>The song lyrics</b> — the text of the song you created</li>
+    <li data-en="🎵 <b>The track file</b> — the song audio itself" data-hi="🎵 <b>Track file</b> — khud gaane ki audio file">🎵 <b>The track file</b> — the song audio itself</li>
+  </ul>
+  <p  data-en="Include your <b>WhatsApp screen recording</b> as a separate file. Send original files so the quality stays intact." data-hi="Apni <b>WhatsApp screen recording</b> alag file mein bhejo. Original files bhejo taaki quality bani rahe.">Include your <b>WhatsApp screen recording</b> as a separate file. Send original files so the quality stays intact.</p>
+</div>
+<div class="tip" data-en="⏳ <b>Please send the raw materials within 4–5 days.</b> Once we agree on the shoot, we hold a slot for you — sending on time keeps you first in line for the next videos." data-hi="⏳ <b>Raw material 4–5 din ke andar bhejna zaroori hai.</b> Shoot tay hone ke baad hum aapke liye slot rakhte hain — time par bhejoge to agle videos ke liye aap hi pehle number par rahoge.">⏳ <b>Please send the raw materials within 4–5 days.</b> Once we agree on the shoot, we hold a slot for you — sending on time keeps you first in line for the next videos.</div>
+
+<h2  data-en="9 · Payment &amp; publishing" data-hi="9 · Payment aur posting">9 · Payment & publishing</h2>
+<div class="card" data-en="<h3>UGC creators</h3>We review your raw footage and pay for the accepted video at your agreed rate. We handle the editing." data-hi="<h3>UGC creators</h3>Hum raw footage review karte hain aur accepted video ka payment agreed rate par karte hain. Editing hum sambhalte hain."><h3>UGC creators</h3>We review your raw footage and pay for the accepted video at your agreed rate. We handle the editing.</div>
+<div class="card" data-en="<h3>Influencers</h3>Confirm your agreement with us, then send the raw footage. We pay the <b>first 50% when we receive the raw footage</b>. After the footage is accepted, we send your separate tracking link. Put that link in your bio and mention <b>“link in my bio” in both the video and caption</b>. We edit the final video; publish it as agreed. We pay the <b>remaining 50% once the video is posted</b>." data-hi="<h3>Influencers</h3>Pehle hamare saath agreement confirm karo, phir raw footage bhejo. <b>Raw footage milne par pehle 50% payment</b> karenge. Footage accept hone ke baad aapka alag tracking link bhejenge. Use bio mein lagao aur <b>video aur caption dono mein “link in my bio”</b> bolo ya likho. Final video hum edit karenge; agreement ke mutabik post karo. <b>Video post hone par baaki 50% payment</b> karenge."><h3>Influencers</h3>Confirm your agreement with us, then send the raw footage. We pay the <b>first 50% when we receive the raw footage</b>. After the footage is accepted, we send your separate tracking link. Put that link in your bio and mention <b>“link in my bio” in both the video and caption</b>. We edit the final video; publish it as agreed. We pay the <b>remaining 50% once the video is posted</b>.</div>
+<p  data-en="Your private creator access link is for making your songs. Your audience tracking link is the one to share publicly." data-hi="Private creator access link aapke gaane banane ke liye hai. Audience tracking link hi publicly share karo.">Your private creator access link is for making your songs. Your audience tracking link is the one to share publicly.</p>
+<footer>
+<p>SingDia · M/s Akhil Creations · <a href="https://singdia.com/terms">Terms</a> · <a href="https://singdia.com/privacy">Privacy</a></p>
+  <p data-en="Questions? Reach out to your SingDia contact. Let's create moments people remember for life." data-hi="Sawaal hain? Apne SingDia contact se baat karo. Aaiye aise moments banaye jo log zindagi bhar yaad rakhein.">Questions? Reach out to your SingDia contact. Let's create moments people remember for life.</p>
+</footer>
+
+</div>
+<script>
+function setLang(l){
+  document.querySelectorAll('[data-en]').forEach(function(e){
+    var v=e.getAttribute('data-'+l); if(v!==null) e.innerHTML=v;
+  });
+  document.getElementById('bEN').className = l==='en' ? 'on' : '';
+  document.getElementById('bHI').className = l==='hi' ? 'on' : '';
+  document.documentElement.lang = l;
+  try{localStorage.setItem('sd_lang',l)}catch(x){}
+}
+try{var s=localStorage.getItem('sd_lang'); if(s) setLang(s);}catch(x){}
+</script>
+</body>
+</html>
