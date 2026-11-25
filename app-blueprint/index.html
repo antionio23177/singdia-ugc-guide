@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#6b1231">
+  <meta name="description" content="Explore the proposed SingDia app: personal songs, simple AI videos, 20 template concepts, and a numbered screen-by-screen product walkthrough.">
+  <title>SingDia — App Experience Blueprint</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#walkthrough">Skip to app walkthrough</a>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="SingDia blueprint home"><span class="brand-symbol">s<span>♪</span></span>SingDia<span class="brand-label">APP BLUEPRINT</span></a>
+  <nav aria-label="Page navigation"><a href="#walkthrough">The experience</a><a href="#templates">20 templates</a><a href="#research">Research</a><a href="#scope">Build scope</a></nav>
+  <a class="small-cta" href="#walkthrough">Explore the app</a>
+</header>
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="line"></span> SINGDIA · PRODUCT CONCEPT · 25 NOV 2026</p>
+      <h1>A song for someone.<br>A video starring <em>you.</em></h1>
+      <p class="lead">One welcoming app. Two creative paths. A personal song or an AI video, without a complicated editor.</p>
+      <div class="hero-actions"><a class="primary" href="#walkthrough">Explore the app</a><a class="text-link" href="#templates">Browse the template ideas</a></div>
+      <div class="hero-stats"><div><strong>02</strong><span>clear starting points</span></div><div><strong>03</strong><span>creative actions</span></div><div><strong>20</strong><span>template concepts</span></div></div>
+      <p class="caption">A clickable design proposal, not a released app. Prices, coins and plans remain <strong>?</strong></p>
+    </div>
+    <div class="hero-stage" aria-label="Preview of the proposed SingDia home screen">
+      <div class="stage-orbit orbit-one"></div><div class="stage-orbit orbit-two"></div>
+      <div class="floating-tag tag-top">Your stories. Your spotlight.</div>
+      <div class="hero-phone"><div class="phone-island"></div><div class="phone-status"><span>9:41</span><span>● ▰</span></div><div class="mini-brand">SingDia <span>◉ ?</span></div><p class="mini-kicker">MAKE SOMETHING PERSONAL</p><h2>What will you<br>create today?</h2><div class="hero-song"><span>♫</span><div><strong>Create a Song</strong><p>A little story. A lot of feeling.</p></div></div><div class="hero-video"><div class="hero-art" id="heroArt"></div><div class="hero-video-copy"><span>✦</span><strong>Create AI Video</strong><p>Pick a look. Make it yours.</p></div></div><div class="mini-nav"><span class="active">⌂<small>Home</small></span><span>▦<small>My creations</small></span><span>○<small>Profile</small></span></div></div>
+      <div class="floating-preview"><div id="floatingArt"></div><span>PHOTO TO VIDEO</span><strong>Your cinematic moment</strong><div class="mini-progress"><i></i></div></div>
+      <div class="floating-tag tag-bottom"><span>✦</span> Choose. Add. Create.</div>
+    </div>
+  </section>
+  <div class="principle-strip"><div class="wrap"><span>Made for a simple first creation</span><b>Browse before login</b><b>9:16 by default</b><b>Cost before Create</b><b>One shared library</b></div></div>
+
+  <section class="wrap section" id="flow">
+    <div class="section-heading"><div><p class="eyebrow">THE CORE JOURNEY</p><h2>Two doors.<br>One familiar experience.</h2></div><p>Home separates songs from video. Each path asks only for what the chosen creation needs. No model picker, timeline or editing workspace in the first release.</p></div>
+    <div class="journey-board"><div class="journey-home"><span class="node-icon">s♪</span><strong>01 / Home</strong><span>No login wall</span></div><div class="journey-paths"><div><span class="route-label song-label">♫ SONG</span><b>Tell your story</b><span class="connector">›</span><b>Review lyrics</b><span class="connector">›</span><b>Get your song</b></div><div><span class="route-label video-label">✦ VIDEO</span><b>Pick a template</b><span class="connector">›</span><b>Add photo / clip / idea</b><span class="connector">›</span><b>Create & save</b></div></div></div>
+    <p class="flow-note"><strong>Three creative actions, not a three-tap promise.</strong> A first-time creator also completes sign-in and, if needed, payment before paid generation. Returning users with coins skip those sheets. Rendering time depends on the provider.</p>
+  </section>
+
+  <section class="walkthrough-section" id="walkthrough">
+    <div class="wrap section">
+      <div class="section-heading"><div><p class="eyebrow">SCREEN-BY-SCREEN WALKTHROUGH</p><h2>See exactly what<br>goes where.</h2></div><div><p>Choose a numbered screen, or tap through the phone. Notes beside each screen explain its layout and the next action.</p><p class="caption">Interactive prototype · sample inputs only · no account, charge or AI generation</p></div></div>
+      <div class="walkthrough-controls"><div class="segmented" aria-label="Walkthrough path"><button class="selected" data-track="video" aria-pressed="true">AI video path</button><button data-track="song" aria-pressed="false">Song path</button><button data-track="all" aria-pressed="false">All screens</button></div><button class="reset-demo" id="resetDemo">Reset demo</button></div>
+      <div class="experience-grid">
+        <nav class="screen-list" id="screenList" aria-label="Numbered app screens"></nav>
+        <div class="phone-column"><div class="screen-counter" id="screenCounter"></div><div class="device"><div class="phone-island"></div><div class="phone-status"><span>9:41</span><span>● ▰</span></div><div id="appScreen" class="app-screen" aria-label="App screen preview"></div></div><div class="screen-pager"><button id="prevScreen" aria-label="Previous screen">Previous</button><span id="pagePosition"></span><button id="nextScreen" aria-label="Next screen">Next screen</button></div></div>
+        <aside class="screen-notes" id="screenNotes" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section template-section" id="templates">
+    <div class="wrap"><div class="section-heading"><div><p class="eyebrow">THE TEMPLATE COLLECTION</p><h2>20 ways to start.<br><em>Zero blank canvases.</em></h2></div><div><p>Four ideas from each of five competitor benchmarks. Adapted for personal gifts, wedding moments and short social videos in India.</p><p class="caption">These are proposed concepts, not a measured “India top 20” ranking. Animations are original motion studies, not generated video samples.</p></div></div>
+      <div class="gallery-toolbar"><div class="filter-chips" id="templateFilters" aria-label="Template categories"></div><button class="motion-button" id="motionToggle" aria-pressed="false">Pause motion</button></div>
+    </div>
+    <div class="marquee-viewport" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
+    <div class="wrap"><p class="caption gallery-hint">The preview strip moves left to right. Pause it anytime. The cards below stay still so they are easy to select.</p><div class="template-grid" id="templateGrid"></div><p class="empty-state" id="emptyTemplates" hidden>No templates in this category.</p></div>
+  </section>
+
+  <section class="wrap section pricing-section" id="plans">
+    <div class="section-heading"><div><p class="eyebrow">LOGIN, COINS & PLANS</p><h2>Let them explore.<br>Explain before they pay.</h2></div><p>Keep the coin balance in the top right. Open plans only when the creator taps it, visits Profile, or needs more coins for a chosen creation.</p></div>
+    <div class="pricing-grid">
+      <article class="plan-card"><span class="plan-caption">OCCASIONAL CREATOR</span><h3>Starter pack <button class="question" data-info="plans" aria-label="Starter plan details undecided">?</button></h3><p class="price">₹<strong>?</strong><span> / one-time</span></p><p><strong>? coins</strong> included</p><hr><p>? coins / standard video<br>≈ ₹? / standard video</p><span class="plan-note">Pack size and price to decide</span></article>
+      <article class="plan-card featured"><span class="plan-caption">REGULAR CREATOR</span><h3>Creator pack <button class="question" data-info="plans" aria-label="Creator plan details undecided">?</button></h3><p class="price">₹<strong>?</strong><span> / one-time</span></p><p><strong>? coins</strong> included</p><hr><p>? coins / standard video<br>≈ ₹? / standard video</p><span class="plan-note">Proposed starting model: coin packs</span></article>
+      <article class="plan-card"><span class="plan-caption">OPTION TO TEST LATER</span><h3>Monthly plan <button class="question" data-info="subscription" aria-label="Monthly plan decision">?</button></h3><p class="price">₹<strong>?</strong><span> / month?</span></p><p><strong>? coins</strong> per month?</p><hr><p>Renewal? · Rollover?<br>Cancellation terms?</p><span class="plan-note">Not required for the first release</span></article>
+    </div>
+    <div class="cost-board"><div><h3>Every Create button shows the cost</h3><p>“Create video · ? coins” with duration and output size immediately above it. Face replacement, cinematic stories and songs each have their own visible quote.</p><p class="caption">₹ per output = pack price ÷ usable pack coins × output coin cost. This is an estimate tied to the selected pack, not a universal exchange rate.</p></div><div><h3>Failure should not cost a second time</h3><p>Proposed rule: reserve coins once; settle only on delivery; release them on technical failure. Show the transaction in Profile. A user-requested new version is a new paid generation, with its cost shown first.</p><p class="caption">Billing route, taxes, pack expiry, refunds and native app checkout require owner/developer decisions before launch. This page takes no payments.</p></div></div>
+  </section>
+
+  <section class="research-section" id="research"><div class="wrap section">
+    <div class="section-heading"><div><p class="eyebrow">WHAT WE LEARNED</p><h2>Five benchmarks.<br>A simpler SingDia.</h2></div><p>Public pages and app listings checked on 25 November 2026. These are selected design references, not a claim that these apps lead the Indian market.</p></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Competitor comparison"><table><thead><tr><th>Benchmark</th><th>Verified public offering / flow</th><th>Bring into SingDia</th><th>Keep out of this version</th></tr></thead><tbody id="comparisonRows"></tbody></table></div>
+    <div class="research-limit"><strong>Evidence boundary</strong><p>Enkio, PixVerse and Higgsfield public interfaces were visually inspected; King AI’s India listing and promotional screenshot were inspected. Kling is supported by its owner’s public documentation. Signed-in onboarding, checkout and generation quality were not tested. “Adapted from” describes an idea, not a partnership or a copied template.</p></div>
+    <h3 class="subheading">The India launch approach</h3><div class="strategy-grid"><article><span>01</span><h3>Lead with an occasion</h3><p>Start with birthday, wedding, anniversary and personal hero moments. Use an occasion name and a sample result, rather than a model name.</p></article><article><span>02</span><h3>Make language feel local</h3><p>Propose English, Hindi and Hinglish for first-release prompts and song choices. Review Hindi copy before launch. Add regional languages after quality checks.</p></article><article><span>03</span><h3>Make the first result shareable</h3><p>Default to a short vertical clip. Offer Save and the device share sheet; let the person choose WhatsApp, Instagram or another destination.</p></article><article><span>04</span><h3>Validate a small collection</h3><p>Launch-test the five marked “Start here” concepts. Compare selection, paid completion, successful delivery and user-initiated sharing. Expand winners across the 20 concepts.</p></article></div>
+    <div class="market-note" id="marketNote"></div>
+  </div></section>
+
+  <section class="wrap section" id="scope">
+    <div class="section-heading"><div><p class="eyebrow">A MODERATE FIRST RELEASE</p><h2>Small enough to build.<br>Complete enough to use.</h2></div><p>One fixed recipe per template. The product chooses the provider and settings behind the scenes. Cap complex cases instead of exposing a studio editor.</p></div>
+    <div class="scope-grid"><article class="scope-card"><span class="scope-label">BUILD FIRST</span><h3>The essential experience</h3><ul><li>Home with Song and AI Video cards</li><li>Template gallery, categories and favourites</li><li>One photo + preset motion, or a short idea</li><li>Single-person face replacement in approved short scenes</li><li>One-scene cinematic story with one subject</li><li>Song story form, lyric review and name-pronunciation hint</li><li>One account, coin balance and creation library</li><li>Processing, failure recovery, Save and device sharing</li></ul></article><article class="scope-card"><span class="scope-label amber">LIMIT THE COMPLEXITY</span><h3>Useful, with boundaries</h3><ul><li>Proposed video default: 5 seconds, 9:16, 720p; verify provider support</li><li>Clip input: fixed length, one visible subject, one face</li><li>Face swap: own or permitted face; no celebrity default scenes</li><li>Music attachment: existing owned/licensed song, optional</li><li>Couple scenes and motion transfer require quality checks</li><li>Show only the upload fields the selected template needs</li><li>No exact generation-time guarantee before measurement</li><li>Pause off-screen previews and respect reduced motion</li></ul></article><article class="scope-card later"><span class="scope-label">LATER</span><h3>Leave room to grow</h3><ul><li>Multi-scene films and character training</li><li>Full music-video agent or long lip-sync performance</li><li>Timeline, layers, manual masking and motion brushes</li><li>Hundreds of selectable models</li><li>Multi-person swaps and unrestricted clip editing</li><li>4K, long videos and batch generation</li><li>Public creator feed and automatic social posting</li><li>Recurring subscriptions before repeat-use demand is known</li></ul></article></div>
+    <details class="handoff"><summary>Builder handoff: states, defaults and open decisions</summary><div class="handoff-grid"><div><h3>Input → output contract</h3><p>Templates define input type, people count, duration, aspect ratio, output size and cost before submission. Photo, clip and prompt paths converge on the same job screen and result page. The provider must pass quality checks for each recipe.</p><h3>Keep the draft intact</h3><p>Sign-in, payment failure, back navigation and network loss must retain the selected template and fields. Users can cancel the account or plan sheet and return to their draft. Only a confirmed Create action starts a paid job.</p><h3>Media privacy</h3><p>Use private storage and expiring media links. Let users delete source media and creations. Show face-use permission at the relevant upload. Pick a retention period and vendors before launch; this prototype uploads nothing.</p></div><div><h3>Required states</h3><p>Empty input · invalid file · missing face · missing permission · signed out · insufficient coins · payment pending/failed · queued · generating · completed · technically failed · offline · deleted.</p><h3>What needs a decision?</h3><p>Provider and recipe quality? Native billing? ₹ pack prices and coins? Coin expiry? Usage licence? Video retention? Exact song outputs? Refund rules? All remain open; no revenue projections or private business numbers are included here.</p><h3>Acceptance checks</h3><p>A returning creator with coins can pick a template, provide its inputs and press Create. First-time authentication/payment does not erase the draft. Every result returns to My creations. Failed jobs release reserved coins once.</p></div></div></details>
+  </section>
+  <section class="wrap section sources-section" id="sources"><p class="eyebrow">RESEARCH NOTES</p><h2>Sources behind the proposal.</h2><p class="caption">Checked 25 November 2026. Vendor descriptions establish advertised features, not independently verified output quality or India popularity.</p><ol id="sourceList"></ol></section>
+  <section class="final-banner wrap"><div><p class="eyebrow">THE SINGDIA IDEA</p><h2>Make it personal.<br>Keep it simple.</h2></div><a class="primary" href="#walkthrough">Explore the app</a></section>
+</main>
+<footer class="site-footer wrap"><p><strong>SingDia</strong> · App experience proposal · 25 November 2026</p><p>M/s Akhil Creations · <a href="https://singdia.com/terms">Terms</a> · <a href="https://singdia.com/privacy">Privacy</a></p><p class="caption">Proposed features and original animated concept artwork. No live AI, billing or account integration.</p></footer>
+<dialog id="detailDialog"><div class="dialog-heading"><span class="eyebrow" id="dialogEyebrow">TEMPLATE CONCEPT</span><button id="closeDialog" class="close-dialog" aria-label="Close details">×</button></div><div id="dialogContent"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
